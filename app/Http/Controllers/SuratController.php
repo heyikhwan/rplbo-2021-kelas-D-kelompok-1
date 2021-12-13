@@ -13,7 +13,7 @@ class SuratController extends Controller
     public function create() {
         $user = User::findOrFail(Auth::user()->id);
 
-        return view('page.pengajuan.pengajuan-surat', [
+        return view('page.pengajuan.PengajuanSurat', [
             'user' => $user
         ]);
     }

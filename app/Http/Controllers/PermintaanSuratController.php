@@ -11,7 +11,7 @@ class PermintaanSuratController extends Controller
     public function index() {
         $surats = UserSurat::getAllLetter();
 
-        return view('page.permintaan.permintaan-surat', [
+        return view('page.permintaan.PermintaanSurat', [
             'surats' => $surats
         ]);
     }

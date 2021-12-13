@@ -13,7 +13,7 @@ class LegalisirController extends Controller
     public function create() {
         $user = User::findOrFail(Auth::user()->id);
 
-        return view('page.pengajuan.pengajuan-legalisir', [
+        return view('page.pengajuan.PengajuanLegalisir', [
             'user' => $user
         ]);
     }

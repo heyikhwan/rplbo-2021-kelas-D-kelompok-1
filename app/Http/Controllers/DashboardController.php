@@ -23,7 +23,7 @@ class DashboardController extends Controller
 
         $jml_user = User::all()->count();
 
-        return view('page.dashboard', [
+        return view('page.Dashboard', [
             'jml_pengajuan_surat' => $jml_pengajuan_surat,
             'jml_pengajuan_legalisir' => $jml_pengajuan_legalisir,
             'jml_pengajuan_selesai' => $jml_pengajuan_selesai,

@@ -11,7 +11,7 @@ class PermintaanLegalisirController extends Controller
     public function index() {
         $surats = UserSurat::getAllLegalization();
 
-        return view('page.permintaan.permintaan-legalisir', [
+        return view('page.permintaan.PermintaanLegalisir', [
             'surats' => $surats
         ]);
     }

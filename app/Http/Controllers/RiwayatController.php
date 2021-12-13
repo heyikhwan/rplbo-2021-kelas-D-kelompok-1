@@ -11,7 +11,7 @@ class RiwayatController extends Controller
 
         $surats = UserSurat::getAll();
 
-        return view('page.riwayat.lacak-riwayat-surat', [
+        return view('page.riwayat.LacakRiwayatSurat', [
             'surats' => $surats
         ]);
     }

@@ -11,13 +11,13 @@ class UserController extends Controller
 
         $users = User::getAllUser();
 
-        return view('page.user.kelola-user', [
+        return view('page.user.KelolaUser', [
             'users' => $users
         ]);
     }
 
     public function create() {
-        return view('page.user.tambah-user');
+        return view('page.user.TambahUser');
     }
 
     public function store(Request $request) {
@@ -42,7 +42,7 @@ class UserController extends Controller
     }
 
     public function edit($id) {
-        return view('page.user.edit-user', [
+        return view('page.user.EditUser', [
             'user' => User::find($id)
         ]);
     }
