@@ -47,6 +47,11 @@
         </div>
     </div>
 
+    <div class="form-group form-check mt-3 d-flex align-items-center">
+        <input type="checkbox" class="form-check-input" id="persetujuan" required>
+        <label class="form-check-label" for="persetujuan">Saya setuju, paham prosedur & bertanggung jawab bahwa data yang saya inputkan adalah benar.</label>
+    </div>
+
     <div class="d-flex justify-content-end my-3">
         <a href="{{ route('dashboard') }}" class="btn btn-secondary">Cancel</a>
         <button type="submit" class="ml-2 btn btn-primary">Ajukan Legalisir</button>
