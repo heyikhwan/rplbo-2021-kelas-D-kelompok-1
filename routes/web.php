@@ -23,11 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
     // Dashboard
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-    Route::get('/', function() {
-        return redirect()->route('dashboard');
-    });
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
     // Kelola User
     Route::group(['middleware' => ['role:Staff Tata Usaha']], function() {

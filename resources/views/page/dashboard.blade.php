@@ -74,8 +74,7 @@
                 @endhasrole
 
                 @unlessrole('Siswa|Alumni')
-                <h3>100</h3>
-                    {{-- <h3>{{ $jml_user }}</h3> --}}
+                    <h3>{{ $jml_user }}</h3>
                     <p>User</p>
                 @endunlessrole
             </div>
