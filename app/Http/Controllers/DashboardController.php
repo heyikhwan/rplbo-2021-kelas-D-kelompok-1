@@ -21,7 +21,7 @@ class DashboardController extends Controller
         $jml_permintaan_surat = UserSurat::getAllLetter()->count();
         $jml_permintaan_legalisir = UserSurat::getAllLegalization()->count();
 
-        $jml_user = User::all()->count();
+        // $jml_user = User::all()->count();
 
         return view('page.Dashboard', [
             'jml_pengajuan_surat' => $jml_pengajuan_surat,
@@ -29,7 +29,7 @@ class DashboardController extends Controller
             'jml_pengajuan_selesai' => $jml_pengajuan_selesai,
             'jml_permintaan_surat' => $jml_permintaan_surat,
             'jml_permintaan_legalisir' => $jml_permintaan_legalisir,
-            'jml_user' => $jml_user
+            // 'jml_user' => $jml_user
         ]);
     }
 }
